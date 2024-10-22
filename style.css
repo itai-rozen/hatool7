@@ -1,3 +1,38 @@
 h1 {
   color: red;
 }
+
+#cat-emoji {
+  font-size: 3rem;
+  display: inline-block;
+  animation: catSwing 1s ease-in-out infinite;
+}
+
+button {
+  display: block;
+  height: 10em;
+  width: 14em;
+  margin: 1em;
+  background-color: orangered;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2em;
+  cursor: pointer;
+  box-shadow: 0 2px 4px black;
+}
+
+.blue {
+  background-color: blueviolet;
+}
+
+@keyframes catSwing {
+  0% {
+      transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+      transform: rotate(20deg);
+  }
+}
