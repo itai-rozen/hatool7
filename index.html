@@ -6,12 +6,16 @@
   <title>LitterBox</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="onInit()">
   <h1>Litter Box update</h1>
-  
-  <img src="" alt="changing cat emoji">
+  <div>Last sand cleaning: <span class="last-cLean"></span></div>
+  <div>Last sand replace: <span class="last-replace"></span></div>
+
+  <div id="cat-emoji">
+    <!-- cat emoji goes here -->
+  </div>
   <button>cleaned litterbox</button>
-  <button>replaced sand</button>
+  <button class="blue">replaced sand</button>
   <script src="script.js"></script>
 </body>
 </html>
