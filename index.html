@@ -8,14 +8,14 @@
 </head>
 <body onload="onInit()">
   <h1>Litter Box update</h1>
-  <div>Last sand cleaning: <span class="last-cLean"></span></div>
-  <div>Last sand replace: <span class="last-replace"></span></div>
+  <div>Last sand cleaning: <span id="last-clean"></span></div>
+  <div>Last sand replace: <span id="last-replace"></span></div>
 
   <div id="cat-emoji">
     <!-- cat emoji goes here -->
   </div>
-  <button>cleaned litterbox</button>
-  <button class="blue">replaced sand</button>
+  <button onclick="buttonClicked('clean')">cleaned litterbox</button>
+  <button onclick="buttonClicked('replace')" class="blue">replaced sand</button>
   <script src="script.js"></script>
 </body>
 </html>
